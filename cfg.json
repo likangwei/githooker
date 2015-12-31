@@ -1,3 +1,5 @@
 {
-  "baymax": "/var/www/baymax/deploy.sh; /var/www/baymax/reloadUwsgi.sh"
+  "baymax": "/var/www/baymax/deploy.sh; /var/www/baymax/reloadUwsgi.sh",
+
+  "falcon-plugins": "date"
 }
