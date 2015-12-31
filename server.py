@@ -77,6 +77,7 @@ class HookHandler(SentryMixin, tornado.web.RequestHandler):
 
     def post(self, *args, **kwargs):
         data = json.loads(self.request.body)
+        print data
         repository = data.get('repository', None)
         if repository:
             name = repository['name']
