@@ -1,2 +1,2 @@
-ps aux|grep server.py|awk '{print $2}'|xargs kill -9
-(python server.py > /dev/null 2>&1)&
+netstat -anp|grep "0.0.0.0:9003"|awk '{print $7}'|awk -F "/" '{print $1}'|xargs kill -9
+nohup python server.py &
