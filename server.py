@@ -9,9 +9,6 @@ import tornado.ioloop
 import tornado.options
 import tornado.web
 from tornado.options import define, options
-from sendsms import send_sms_message
-from sendmail import ExternalMailUtil
-from conf import *
 from raven.contrib.tornado import AsyncSentryClient
 import json
 import subprocess
