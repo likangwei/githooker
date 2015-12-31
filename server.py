@@ -95,7 +95,7 @@ def main():
     tornado.options.parse_command_line()
     application = tornado.web.Application([
         (r"/", MainHandler),
-        (r"/githook", HookHandler),
+        (r"/githook/?", HookHandler),
     ])
     application.sentry_client = AsyncSentryClient(
         'https://5dda032172d341f6b678da68a567aaa3:0ac807330ce84bdb98e87faeb655187f@app.getsentry.com/62444'
