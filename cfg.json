@@ -1,0 +1,3 @@
+{
+  "baymax": "/var/www/baymax/deploy.sh; /var/www/baymax/reloadUwsgi.sh"
+}
