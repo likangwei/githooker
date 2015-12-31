@@ -33,10 +33,6 @@ BASE_DIR = os.path.dirname(__file__)
 print BASE_DIR
 CONFIG_FILE = os.path.join(BASE_DIR, 'cfg.json')
 
-class BaseHandler(tornado.web.RequestHandler):
-    def post(self, *args, **kwargs):
-        RequestHandler.write(self, response)
-
 
 def log_request_detail(func):
     def wrapper(handler, *args, **kwargs):
