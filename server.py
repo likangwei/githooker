@@ -76,7 +76,6 @@ class HookHandler(SentryMixin, tornado.web.RequestHandler):
         self.write("ok")
 
     def post(self, *args, **kwargs):
-        print 'request body==>', self.request.body
         data = json.loads(self.request.body)
         print data
         repository = data.get('repository', None)
@@ -88,6 +87,7 @@ class HookHandler(SentryMixin, tornado.web.RequestHandler):
             response = result[1]
         else:
             response = data
+        _mlogger.info(response)
         self.write(response)
 
 

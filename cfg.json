@@ -1,5 +1,5 @@
 {
   "baymax": "/var/www/baymax/deploy.sh; /var/www/baymax/reloadUwsgi.sh",
 
-  "falcon-plugins": "date"
+  "falcon-plugins": "ssh -p50022 meicai@data03 \"/bin/bash /opt/meicai/www/falcon-plugins/deploy.sh\""
 }
