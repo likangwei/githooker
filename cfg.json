@@ -1,5 +1,5 @@
 {
   "baymax": "/var/www/baymax/deploy.sh; /var/www/baymax/reloadUwsgi.sh",
-
+  "loverCrawler": "/var/www/love/deploy.sh;/var/www/love/server/run.sh",
   "falcon-plugins": "ssh -p50022 meicai@data03 \"/bin/bash /opt/meicai/www/falcon-plugins/deploy.sh\""
 }
